@@ -1,31 +1,33 @@
-# Eclipse
-.project
-.classpath
-.settings/
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
 
-# Maven
-target/
-dependency-reduced-pom.xml
-pom.xml.versionsBackup
+# Executable files
+src/gopcp.v2/chapter6/webcrawler/examples/finder/finder
 
-# Gradle
-.gradle/
-build/
+# Output files & folders
+src/gopcp.v2/chapter6/webcrawler/examples/finder/pictures/
 
-#IDEA
-# idea ignore
-.idea/
-*.ipr
-*.iml
-*.iws
+# Folders
+_obj
+_test
 
-# temp ignore
-*.log
-*.cache
-*.diff
-*.patch
-*.tmp
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
 
-# system ignore
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
+*.test
+*.prof
+
+# Mac
 .DS_Store
-Thumbs.db
