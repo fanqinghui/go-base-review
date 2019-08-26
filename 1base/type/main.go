@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 //数据类型
 // string  []切片
@@ -18,6 +21,7 @@ func main()  {
 
 	x:=2+1i
 	y:=3-2i
+	fmt.Println(reflect.TypeOf(x))
 	fmt.Println(x*y)
 	z:=x*y
 	//输出 实数 与虚数部分
