@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+this is index Page(template)
+{{.Title}}
+<br/>
+
+{{ range .Job}}
+    {{.Name}}
+    {{.Status}}<br/>
+{{end}}
+</body>
+</html>

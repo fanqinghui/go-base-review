@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/css/todo.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1>
+todoList
+</h1>
+<br/>
+title:{{.Title}}
+<br>
+<ul>
+{{range .Job}}
+    {{/*<li {{if .Status}} style="color: green" {{else}} style="color: red" {{end}}>}}*/}}
+        <li {{if .Status}}} class="Done" {{else}} class="UnDone" {{end}}>
+        {{.Name}}
+    </li>
+{{end}}
+</ul>
+
+</body>
+</html>
